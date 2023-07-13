@@ -1,0 +1,1 @@
+ALTER TABLE hospedes MODIFY complemento VARCHAR(100) NULL;

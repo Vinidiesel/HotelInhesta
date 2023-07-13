@@ -1,0 +1,1 @@
+alter table quartos add ativo tinyint(1) not null;
