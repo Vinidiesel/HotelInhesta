@@ -32,7 +32,6 @@ public class CadastroController {
     @Transactional
     public ResponseEntity cadastra(@RequestBody @Valid DadosCadastroUsuarios dados, UriComponentsBuilder uriComponentsBuilder){
         var usuario = new Usuario(dados);
-        usuario.setSenha(passwordEncoder().encode(usuario.getPassword()));
         repository.save(usuario);
 
         var uri = uriComponentsBuilder.path("/hospedes/{id}").buildAndExpand(usuario.getId()).toUri();
@@ -40,8 +39,6 @@ public class CadastroController {
         return ResponseEntity.created(uri).body(new DadosDetalhamentoUsuario(usuario));
     }
 
-    public PasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();
-    }
+
 
 }
