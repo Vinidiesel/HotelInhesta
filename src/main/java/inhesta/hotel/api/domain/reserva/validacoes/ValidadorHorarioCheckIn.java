@@ -1,13 +1,14 @@
 package inhesta.hotel.api.domain.reserva.validacoes;
 
 import inhesta.hotel.api.domain.ValidacaoException;
-import inhesta.hotel.api.domain.reserva.DadosAgendamentoReserva;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-public class ValidadorHorarioCheckIn {
+@Component
+public class ValidadorHorarioCheckIn implements ValidadorCheckInSemParametro {
 
-    public void validar(){
+    public void validarCheckIn(){
         var dataCheckIn = LocalDateTime.now();
 
         var antesDaAberturaDoCheckIn = dataCheckIn.getHour() < 12;
