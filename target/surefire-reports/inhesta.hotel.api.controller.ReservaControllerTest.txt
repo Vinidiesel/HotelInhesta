@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: inhesta.hotel.api.controller.ReservaControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.97 s - in inhesta.hotel.api.controller.ReservaControllerTest

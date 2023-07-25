@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: inhesta.hotel.api.ApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.373 s - in inhesta.hotel.api.ApiApplicationTests
