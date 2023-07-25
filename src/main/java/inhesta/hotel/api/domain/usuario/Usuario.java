@@ -1,5 +1,6 @@
 package inhesta.hotel.api.domain.usuario;
 
+import inhesta.hotel.api.domain.usuario.DTO.DadosCadastroUsuarios;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;

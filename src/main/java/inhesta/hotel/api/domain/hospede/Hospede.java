@@ -1,6 +1,8 @@
 package inhesta.hotel.api.domain.hospede;
 
 import inhesta.hotel.api.domain.endereco.Endereco;
+import inhesta.hotel.api.domain.hospede.DTO.DadosAtualizacaoHospedes;
+import inhesta.hotel.api.domain.hospede.DTO.DadosCadastroHospede;
 import jakarta.persistence.*;
 import lombok.*;
 

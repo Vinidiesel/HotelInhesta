@@ -1,11 +1,12 @@
 package inhesta.hotel.api.domain.reserva.checkIn;
 
 import inhesta.hotel.api.domain.ValidacaoException;
-import inhesta.hotel.api.domain.hospede.HospedeRepository;
-import inhesta.hotel.api.domain.quarto.QuartoRepository;
+import inhesta.hotel.api.domain.hospede.repository.HospedeRepository;
+import inhesta.hotel.api.domain.quarto.repository.QuartoRepository;
 import inhesta.hotel.api.domain.reserva.Reserva;
-import inhesta.hotel.api.domain.reserva.ReservaRepository;
-import inhesta.hotel.api.domain.reserva.checkIn.DadosCheckIn;
+import inhesta.hotel.api.domain.reserva.repository.ReservaRepository;
+import inhesta.hotel.api.domain.reserva.checkIn.DTO.DadosCheckIn;
+import inhesta.hotel.api.domain.reserva.checkIn.DTO.DadosDetalhamentoCheckIn;
 import inhesta.hotel.api.domain.reserva.validacoes.ValidadorCheckInComParametro;
 import inhesta.hotel.api.domain.reserva.validacoes.ValidadorCheckInSemParametro;
 import org.springframework.beans.factory.annotation.Autowired;

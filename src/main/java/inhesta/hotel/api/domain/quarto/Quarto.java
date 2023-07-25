@@ -1,5 +1,7 @@
 package inhesta.hotel.api.domain.quarto;
 
+import inhesta.hotel.api.domain.quarto.DTO.DadosAtualizacaoQuartos;
+import inhesta.hotel.api.domain.quarto.DTO.DadosCadastroQuartos;
 import jakarta.persistence.*;
 import lombok.*;
 

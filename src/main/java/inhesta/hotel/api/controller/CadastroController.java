@@ -1,19 +1,13 @@
 package inhesta.hotel.api.controller;
 
-import inhesta.hotel.api.domain.hospede.DadosCadastroHospede;
-import inhesta.hotel.api.domain.hospede.DadosDetalhamentoHospede;
-import inhesta.hotel.api.domain.hospede.Hospede;
-import inhesta.hotel.api.domain.usuario.DadosCadastroUsuarios;
-import inhesta.hotel.api.domain.usuario.DadosDetalhamentoUsuario;
+import inhesta.hotel.api.domain.usuario.DTO.DadosCadastroUsuarios;
+import inhesta.hotel.api.domain.usuario.DTO.DadosDetalhamentoUsuario;
 import inhesta.hotel.api.domain.usuario.Usuario;
-import inhesta.hotel.api.domain.usuario.UsuarioRepository;
-import inhesta.hotel.api.infra.security.SecurityConfigurations;
+import inhesta.hotel.api.domain.usuario.repository.UsuarioRepository;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,6 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("/cadastro")
+@SecurityRequirement(name = "bearer-key")
 public class CadastroController {
 
     @Autowired

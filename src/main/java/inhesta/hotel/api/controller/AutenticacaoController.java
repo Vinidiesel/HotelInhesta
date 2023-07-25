@@ -1,6 +1,6 @@
 package inhesta.hotel.api.controller;
 
-import inhesta.hotel.api.domain.usuario.DadosAutenticacao;
+import inhesta.hotel.api.domain.usuario.DTO.DadosAutenticacao;
 import inhesta.hotel.api.domain.usuario.Usuario;
 import inhesta.hotel.api.infra.security.DadosTokenJWT;
 import inhesta.hotel.api.infra.security.TokenService;

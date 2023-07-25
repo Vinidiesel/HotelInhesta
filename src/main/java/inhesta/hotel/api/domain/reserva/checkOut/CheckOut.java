@@ -1,19 +1,16 @@
 package inhesta.hotel.api.domain.reserva.checkOut;
 
 import inhesta.hotel.api.domain.ValidacaoException;
-import inhesta.hotel.api.domain.reserva.checkIn.DadosCheckIn;
-import inhesta.hotel.api.domain.reserva.Reserva;
-import inhesta.hotel.api.domain.reserva.ReservaRepository;
-import inhesta.hotel.api.domain.reserva.validacoes.ValidadorCheckOut;
+import inhesta.hotel.api.domain.reserva.repository.ReservaRepository;
+import inhesta.hotel.api.domain.reserva.checkOut.DTO.DadosCheckOut;
+import inhesta.hotel.api.domain.reserva.checkOut.DTO.DadosDetalhamentoCheckOut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
-import java.util.List;
 
 import static inhesta.hotel.api.domain.quarto.StatusQuarto.DISPONIVEL;
-import static inhesta.hotel.api.domain.quarto.StatusQuarto.OCUPADO;
 
 @Service
 public class CheckOut {

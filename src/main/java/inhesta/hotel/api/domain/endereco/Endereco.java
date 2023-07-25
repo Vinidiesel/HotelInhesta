@@ -1,5 +1,6 @@
 package inhesta.hotel.api.domain.endereco;
 
+import inhesta.hotel.api.domain.endereco.DTO.DadosEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.*;
 

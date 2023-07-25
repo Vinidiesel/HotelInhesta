@@ -1,8 +1,8 @@
 package inhesta.hotel.api.domain.reserva.validacoes;
 
 import inhesta.hotel.api.domain.ValidacaoException;
-import inhesta.hotel.api.domain.hospede.HospedeRepository;
-import inhesta.hotel.api.domain.reserva.checkIn.DadosCheckIn;
+import inhesta.hotel.api.domain.hospede.repository.HospedeRepository;
+import inhesta.hotel.api.domain.reserva.checkIn.DTO.DadosCheckIn;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

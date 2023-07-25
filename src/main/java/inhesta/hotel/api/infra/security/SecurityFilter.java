@@ -1,6 +1,6 @@
 package inhesta.hotel.api.infra.security;
 
-import inhesta.hotel.api.domain.usuario.UsuarioRepository;
+import inhesta.hotel.api.domain.usuario.repository.UsuarioRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,6 +1,12 @@
 package inhesta.hotel.api.controller;
 
 import inhesta.hotel.api.domain.hospede.*;
+import inhesta.hotel.api.domain.hospede.DTO.DadosAtualizacaoHospedes;
+import inhesta.hotel.api.domain.hospede.DTO.DadosCadastroHospede;
+import inhesta.hotel.api.domain.hospede.DTO.DadosDetalhamentoHospede;
+import inhesta.hotel.api.domain.hospede.DTO.DadosListagemHospede;
+import inhesta.hotel.api.domain.hospede.repository.HospedeRepository;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -14,6 +20,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("/hospedes")
+@SecurityRequirement(name = "bearer-key")
 public class HospedeController {
 
     @Autowired
